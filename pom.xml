@@ -20,12 +20,6 @@
         <!--<artifactId>google-collections</artifactId>-->
         <!--<version>1.0</version>-->
         <!--</dependency>-->
-        <dependency>
-            <groupId>dycore</groupId>
-            <artifactId>dy-commons</artifactId>
-            <version>1.4.0</version>
-        </dependency>
-
         <!--Spring包-->
         <dependency>
             <groupId>org.springframework</groupId>
@@ -113,34 +107,17 @@
             <artifactId>mybatis-spring</artifactId>
             <version>1.2.0</version>
         </dependency>
+
         <dependency>
             <groupId>cglib</groupId>
             <artifactId>cglib-nodep</artifactId>
             <version>2.2.2</version>
         </dependency>
 
-        <!--数据库驱动包-->
-        <dependency>
-            <groupId>com.dooioo</groupId>
-            <artifactId>sqljdbc4</artifactId>
-            <version>1.0</version>
-        </dependency>
-        <dependency>
-            <groupId>dbcp</groupId>
-            <artifactId>dbcp</artifactId>
-            <version>1.4.d2</version>
-        </dependency>
-
         <dependency>
             <groupId>org.freemarker</groupId>
             <artifactId>freemarker</artifactId>
             <version>2.3.9</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.ibatis</groupId>
-            <artifactId>ibatis</artifactId>
-            <version>2.3.3.720</version>
         </dependency>
 
         <dependency>
@@ -152,12 +129,6 @@
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
             <version>4.4.1</version>
-        </dependency>
-
-        <dependency>
-            <groupId>dycore</groupId>
-            <artifactId>dy-web</artifactId>
-            <version>2.5.1</version>
         </dependency>
 
         <dependency>
@@ -212,17 +183,6 @@
             <groupId>org.apache.tomcat</groupId>
             <artifactId>tomcat-jdbc</artifactId>
             <version>${tomcat.version}</version>
-        </dependency>
-        <!--&lt;!&ndash;&lt;!&ndash; MQ相关 &ndash;&gt;&ndash;&gt;-->
-        <dependency>
-            <groupId>dycore</groupId>
-            <artifactId>dy-mq</artifactId>
-            <version>3.0.6</version>
-        </dependency>
-        <dependency>
-            <groupId>dycore</groupId>
-            <artifactId>dy-mq-model</artifactId>
-            <version>2.0.0</version>
         </dependency>
 
     </dependencies>
