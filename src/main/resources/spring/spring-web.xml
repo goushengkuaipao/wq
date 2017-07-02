@@ -25,8 +25,8 @@
             </list>
         </property>
     </bean>
-   <!-- <mvc:resources mapping="/static/**" location="/static/" cache-period="86400"/>
-    <mvc:default-servlet-handler/>    -->
+
+    <mvc:resources mapping="/jsp/**" location="/WEB-INF/jsp/"/>
 
     <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
         <property name="messageConverters">

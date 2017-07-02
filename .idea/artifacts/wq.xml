@@ -1,6 +1,8 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="wq">
     <output-path>$PROJECT_DIR$/out/artifacts/wq</output-path>
-    <root id="root" />
+    <root id="root">
+      <element id="artifact" artifact-name="wq:war" />
+    </root>
   </artifact>
 </component>
