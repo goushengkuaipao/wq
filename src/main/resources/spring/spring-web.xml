@@ -13,6 +13,12 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd"
        default-autowire="byName" default-lazy-init="false">
+
+    <mvc:annotation-driven></mvc:annotation-driven>
+    <context:component-scan base-package="com.wq.controller">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"   />
+    </context:component-scan>
+
     <bean id="restTemplate" class="org.springframework.web.client.RestTemplate">
         <property name="messageConverters">
             <list>
@@ -44,7 +50,7 @@
         <property name="order" value="0"/>
     </bean>
 
-    <!--配置jsp渲染-->
+   <!-- 配置jsp渲染
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="viewClass" value="org.springframework.web.servlet.view.InternalResourceView" />
         <property name="prefix" value="/"/>
@@ -58,5 +64,5 @@
         <property name="prefix" value="/WEB-INF/freemarker/"/>
         <property name="suffix" value=".ftl" />
         <property name="order" value="2"/>
-    </bean>
+    </bean>-->
 </beans>
